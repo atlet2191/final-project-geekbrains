@@ -25,9 +25,10 @@
 
 .content{
     margin: 0;
-    padding: 0;  
-
-
+    padding: 0; 
+    width: 1280px;
+    margin: 0px auto; 
+    
 }
 
 .hider-navigation{
@@ -97,12 +98,13 @@ margin-top: 5px;
 margin-right: 25px;
 }
 
-.link-activ:hover{
+.link-activ:hover,
+.link-activ:active{
   color: #C7B299;
 }
 
-.link-activ:active{
-  color: #49C717;
+.link-activ:focus{
+  color: red;
 }
 
 .icon-card {
@@ -179,8 +181,17 @@ margin-left: 15px;
 
 }
 
-.header-slider__buttom:hover{
+.header-slider__buttom:hover,
+.header-slider__buttom:active{
     fill: #D3C1AD;
+    stroke: red;
+    stroke-width: 1;
 }
+
+
+
+
+   
+
 
 
