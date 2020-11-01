@@ -34,9 +34,22 @@
 			</nav>
 		</div>
 		<div class="header-slider">
-			<div>
-				<svg class="header-slider__buttom-left">
-					<use xlink:href="icon/left.svg#left"> </use>
+			<div class="header-slider__buttom_wrap">
+				<svg xmlns="http://www.w3.org/2000/svg" display="none">
+					<symbol id="left" viewBox="0 0 40 73">
+						<g>
+							<g opacity=".5">
+								<path
+									d="M38.026 72.98L.005 36.497 38.026.018l1.969 2.004L4.066 36.498l35.929 34.479z" />
+								<path
+									d="M38.026 72.98L.005 36.497 38.026.018l1.969 2.004L4.066 36.498l35.929 34.479z" />
+							</g>
+						</g>
+					</symbol>
+				</svg>
+				<svg class="header-slider__buttom">
+					<title>переход</title>
+					<use xlink:href="#left"> </use>
 				</svg>
 
 			</div>
@@ -54,8 +67,26 @@
 				<button class="header-button">Get Started</button>
 
 			</div>
-			<img src="img/right_cleek_slider.svg" alt="">
-		</div>
+
+			<div class="header-slider__buttom_wrap">
+				<svg xmlns="http://www.w3.org/2000/svg" display="none">
+					<symbol id="header-slider__buttom-right" viewBox="0 0 40 73">
+
+						<g opacity=".5">
+							<g>
+								<path d="M1.974 72.98l38.021-36.482L1.974.018.004 2.022l35.93 34.476L.004 70.977z" />
+								<path d="M1.974 72.98l38.021-36.482L1.974.018.004 2.022l35.93 34.476L.004 70.977z" />
+							</g>
+						</g>
+					</symbol>
+				</svg>
+
+				<svg class="header-slider__buttom">
+					<title>переход</title>
+					<use xlink:href="#header-slider__buttom-right"> </use>
+				</svg>
+
+			</div>
 
 
 	</header>
@@ -72,12 +103,7 @@
 
 
 
-		<svg role="img" class="youtobe">
-			<use xlink:href="test.svg#youtobe"> </use>
-		</svg>
-		<svg class="youtobe">
-			<use xlink:href="left.svg#youtobe"></use>
-		</svg>
+
 </body>
 
 </html>

@@ -27,6 +27,7 @@
     margin: 0;
     padding: 0;  
 
+
 }
 
 .hider-navigation{
@@ -80,6 +81,8 @@
 .link-nav{
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -162,19 +165,22 @@ margin-left: 15px;
     font-family: 'Conv_Montserrat-Light';   
 }
 
-.header-slider__buttom-left{
+.header-slider__buttom_wrap{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-slider__buttom{
     fill:#fff;
     width: 40px;
     height: 73px;
- margin: 50% 0% 0% 0%;
+    
+
 }
 
-.header-slider__buttom-left:hover{
+.header-slider__buttom:hover{
     fill: #D3C1AD;
-    stroke: #49C717;
 }
 
-.youtobe{
-fill: #49C717;
-}
 
