@@ -31,24 +31,22 @@
     
 }
 
-.hider-navigation{
+.header-navigation__wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.header-navigation {
     display: flex;
 }
 
 .logo{
     background-image: url(../img/logo_1.jpg);
     margin-top: 40px;
-    margin-left: 200px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 4;
     
-}
-
-.logo-link {
-    font-size: 34px;
-    line-height: 1.2;
-    font-weight: 400;
-    letter-spacing: -0.04em;
-    color: #ffffff;
-    text-decoration: none; 
 }
 
 .logo-text{
@@ -59,16 +57,19 @@
     color: #ffffff;
     text-decoration: none;
     margin: 0px 50px 0px 0px; 
+    position: absolute;
+    top: 10px;
     
     
 }
 
 .header{
     width: 100%;
-    max-width: 1920px;
-    height: 1024px;
+    height: 850px;
     background-image: url(../img/bg_photo_11949.jpg);
     background-color: #47453F;
+    position: relative;
+
 
 
 }
@@ -76,7 +77,36 @@
 .header-nav{
     display: flex;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-left: 200px;
+    margin-bottom: 120px;
+}
+
+.header__search {
+    fill: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-input {
+    width: -0px;
+    height:-0px;
+}
+
+.header__icon-card {
+    fill: #fff;
+    margin-left: 20px;
+
+    
+}
+
+.header__icon-card:hover,
+.header__icon-card:active{
+    fill: #D3C1AD;
+}
+
+.header__search:hover,
+.header__search:active{
+    fill: #D3C1AD;
 }
 
 .link-nav{
@@ -84,6 +114,7 @@
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
+    text-transform: uppercase;
 }
 
 
@@ -98,18 +129,33 @@ margin-top: 5px;
 margin-right: 25px;
 }
 
+.link-activ {
+    display: block;
+}
+
 .link-activ:hover,
 .link-activ:active{
   color: #C7B299;
+  /*text-decoration: underline;*/
 }
 
 .link-activ:focus{
   color: red;
 }
 
-.icon-card {
-margin-bottom: 55px;
-margin-left: 15px;
+.link-activ::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color:#C7B299;
+    transform: scaleX(0);
+    transition: all 0.2s;
+
+}
+
+.link-activ:hover::after {
+    transform: scaleX(1);
 }
 
 .header-text{
@@ -132,8 +178,8 @@ margin-left: 15px;
 .header-slider{
     max-height: 200px;
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .header-description{
@@ -147,9 +193,10 @@ margin-left: 15px;
     font-family: 'Raleway-Bold';
     font-size: 52px;
     color: #ffffff;
+    margin: 0;
 }
 
-.header-button{
+.header-button {
     border: 0px;
     min-height: 53px;
     width: 170px;
@@ -163,11 +210,21 @@ margin-left: 15px;
     margin-top: 50px;
 }
 
+.header-button:hover,
+.header-button:active{
+    border: solid 2px rgb(252, 252, 252);
+}
+
+.header-button:focus {
+    background: rgb(253, 1, 1);
+    
+}
+
 .text { 
     font-family: 'Conv_Montserrat-Light';   
 }
 
-.header-slider__buttom_wrap{
+.svg-center-wrap {
     display: flex;
     align-items: center;
 }
@@ -187,6 +244,183 @@ margin-left: 15px;
     stroke: red;
     stroke-width: 1;
 }
+
+.header__pagination {
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__pagination-item {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background:#ffffff;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    opacity: 50%;
+}
+
+.header__pagination-item:hover {
+     border: 2px solid #d3c1ad;
+     background: transparent;
+     transform: scale(1.2);
+}
+
+.header__menu-mobail {
+    display: none;  
+}
+
+/* media блок header  */
+
+@media (max-width:1024px) {
+
+    .Modern {
+        font-size: 26px;
+    }
+    .psd {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .header.lock {
+        overflow: hidden;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        z-index: 50;
+        height: 100px;
+    }
+    .logo {
+       position: relative;
+        z-index: 0;
+    }
+    
+    .header-navigation {
+        position: relative;
+        z-index: 2;
+    
+    }
+    .header-slider {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 20px;
+        z-index: 2;
+        right: 20px;
+        bottom: 50px;
+        margin-left: auto;
+
+
+    }
+    .header__burger:before,
+    .header__burger:after {
+        content: '';
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        border-radius: 50px;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+    .header__burger span {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 4px;
+        top: 8px;
+        border-radius: 50px;
+    }
+    .header-nav {
+        display: none;
+        
+    }
+    
+    .header-navigation__wrap {
+        display: flow-root;
+    }
+
+      /* вызов меню при клике на бургер */
+
+    .header__menu-mobail_active {
+        display: block;
+        background: #ff6a00;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+    }
+
+    .header__menu-mobail.lock {
+        overflow: hidden;
+    }
+
+    .header__menu-mobail.lock {
+        overflow: hidden;
+    }
+
+    .burger_active:before {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+    .burger_active:after {
+        transform: rotate(-45deg);
+        bottom: 8px;
+
+    }
+    .burger_active span {
+        transform: scale(0);
+        transition: all 0.3s ease 0s; 
+    }
+
+    .link-nav {
+        flex-direction: column;
+        align-items: center;
+        top: 20px;
+        left: 50px;
+        position: absolute;
+        margin: 0;
+    }
+
+    .hider-link {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    .text-wrap {
+        margin-top: 150px; 
+    }
+
+    .text-wrap {
+        overflow: hidden;
+    }
+
+    
+}
+
 
 
 

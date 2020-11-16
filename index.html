@@ -3,39 +3,90 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/index.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<title>Document</title>
 </head>
 
 <body class="content">
 	<header class="header">
-		<div class="hider-navigation">
-			<div class="logo">
-				<a class="logo-link" href="#">
-					<img src="img/logo_1.svg" alt="logo">
-
-				</a>
-			</div>
-			<nav class="header-nav">
-				<a class="logo-text" href="">
+		<div class="header-navigation__wrap">
+			<div class="header-navigation">
+				<div class="logo">
+					<a class="logo-link" href="#">
+						<img src="img/logo_1.svg" alt="logo">
+					</a>
 					<span class="logo-text">Waxom</span>
-				</a>
-				<ul class="link-nav">
-					<li><a class="hider-link link-activ" href="#">Home</a></li>
-					<li><a class="hider-link link-activ" href="#">Portfolio</a></li>
-					<li><a class="hider-link link-activ" href="#">Features</a></li>
-					<li><a class="hider-link link-activ" href="#">Blog</a></li>
-					<li><a class="hider-link link-activ" href="#">Pricing</a></li>
-					<li><a class="hider-link link-activ" href="#">Shortcodes</a></li>
-					<li><a class="hider-link link-activ" href="#">Contact</a></li>
-				</ul>
-				<img class="icon-card" src="img/icon-cart.svg" alt="icon-cart">
-				<img class="icon-card" src="img/icon_search.svg" alt="icon-cart">
-			</nav>
+				</div>
+
+				<nav class="header-nav">
+					<ul class="link-nav">
+						<li><a class="hider-link link-activ" href="#">Home</a></li>
+						<li><a class="hider-link link-activ" href="#">Portfolio</a></li>
+						<li><a class="hider-link link-activ" href="#">Features</a></li>
+						<li><a class="hider-link link-activ" href="#">Blog</a></li>
+						<li><a class="hider-link link-activ" href="#">Pricing</a></li>
+						<li><a class="hider-link link-activ" href="#">Shortcodes</a></li>
+						<li><a class="hider-link link-activ" href="#">Contact</a></li>
+					</ul>
+					<svg xmlns="http://www.w3.org/2000/svg" display="none">
+						<symbol id="header__icon-card">
+							<g>
+								<g>
+									<path
+										d="M17.994 5.997v14.998a3 3 0 0 1-2.999 3H3.002a3 3 0 0 1-2.999-3V5.997A2.999 2.999 0 0 1 3.002 3H4.5c0-1.657 2.013-3 4.498-3 2.484 0 4.497 1.343 4.497 3h1.5a2.999 2.999 0 0 1 2.998 2.998zM6 3h5.997c0-1.037-1.342-1.5-2.998-1.5-1.656 0-2.999.463-2.999 1.5zm10.495 16.496H1.502v1.5c0 .828.672 1.5 1.5 1.5h11.993a1.5 1.5 0 0 0 1.5-1.5zm0-13.498a1.5 1.5 0 0 0-1.5-1.5h-1.499v4.5h-1.499v-4.5H6v4.5H4.501v-4.5h-1.5a1.5 1.5 0 0 0-1.499 1.5v11.998h14.993z" />
+								</g>
+							</g>
+						</symbol>
+					</svg>
+					<div class="svg-center-wrap">
+						<svg class="header__icon-card " width="18" height="24">
+							<title>Карта</title>
+							<use xlink:href="#header__icon-card"> </use>
+						</svg>
+					</div>
+
+					<svg xmlns="http://www.w3.org/2000/svg" display="none">
+						<symbol id="search">
+							<g viewBox="0 0 24 24">
+								<g>
+									<path
+										d="M23.761 23.763a.785.785 0 0 1-1.098 0l-6.217-6.12a10.155 10.155 0 0 1-6.353 2.22C4.52 19.862.001 15.415.001 9.928 0 4.443 4.519-.002 10.093-.002c5.575 0 10.093 4.445 10.094 9.93 0 2.565-.997 4.897-2.618 6.658l6.193 6.095a.758.758 0 0 1 0 1.082zM18.633 9.93c0-4.641-3.823-8.404-8.54-8.404-4.716 0-8.54 3.763-8.54 8.404 0 4.643 3.824 8.405 8.54 8.405 4.717 0 8.54-3.762 8.54-8.405z" />
+									<path
+										d="M23.761 23.763a.785.785 0 0 1-1.098 0l-6.217-6.12a10.155 10.155 0 0 1-6.353 2.22C4.52 19.862.001 15.415.001 9.928 0 4.443 4.519-.002 10.093-.002c5.575 0 10.093 4.445 10.094 9.93 0 2.565-.997 4.897-2.618 6.658l6.193 6.095a.758.758 0 0 1 0 1.082zM18.633 9.93c0-4.641-3.823-8.404-8.54-8.404-4.716 0-8.54 3.763-8.54 8.404 0 4.643 3.824 8.405 8.54 8.405 4.717 0 8.54-3.762 8.54-8.405z" />
+								</g>
+							</g>
+						</symbol>
+					</svg>
+					<div class="svg-center-wrap">
+						<svg class="header__search" width="24" height="24">
+							<title>Поиск</title>
+							<use xlink:href="#search"> </use>
+						</svg>
+				</nav>
+				<nav class="header__menu-mobail">
+					<ul class="link-nav">
+						<li><a class="hider-link link-activ" href="#">Home</a></li>
+						<li><a class="hider-link link-activ" href="#">Portfolio</a></li>
+						<li><a class="hider-link link-activ" href="#">Features</a></li>
+						<li><a class="hider-link link-activ" href="#">Blog</a></li>
+						<li><a class="hider-link link-activ" href="#">Pricing</a></li>
+						<li><a class="hider-link link-activ" href="#">Shortcodes</a></li>
+						<li><a class="hider-link link-activ" href="#">Contact</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="header__burger">
+				<span></span>
+			</div>
+		</div>
+		</div>
 		</div>
 		<div class="header-slider">
-			<div class="header-slider__buttom_wrap">
+			<div class="svg-center-wrap">
 				<svg xmlns="http://www.w3.org/2000/svg" display="none">
 					<symbol id="left" viewBox="0 0 40 73">
 						<g>
@@ -69,7 +120,7 @@
 
 			</div>
 
-			<div class="header-slider__buttom_wrap">
+			<div class="svg-center-wrap">
 				<svg xmlns="http://www.w3.org/2000/svg" display="none">
 					<symbol id="header-slider__buttom-right" viewBox="0 0 40 73">
 
@@ -89,9 +140,34 @@
 
 			</div>
 
-
+		</div>
+		<div class="header__pagination">
+			<a href="" class="header__pagination-item"></a>
+			<a href="" class="header__pagination-item"></a>
+			<a href="" class="header__pagination-item"></a>
+			<a href="" class="header__pagination-item"></a>
+			<a href="" class="header__pagination-item"></a>
+		</div>
 	</header>
-	<div class="text">
+	<div class="text-wrap">
+		<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquid tenetur minus
+			veniam
+			exercitationem fuga perferendis! Aspernatur nulla similique, temporibus consectetur aliquam incidunt
+			autem molestiae nobis, voluptatum unde laudantium accusamus.</p>
+		<br>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quasi maxime, consequatur
+			dolore eaque
+			dolorum asperiores perspiciatis minus earum molestiae possimus corrupti magni laboriosam reiciendis
+			porro odio quaerat molestias maiores!</p>
+		<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquid tenetur minus
+			veniam
+			exercitationem fuga perferendis! Aspernatur nulla similique, temporibus consectetur aliquam incidunt
+			autem molestiae nobis, voluptatum unde laudantium accusamus.</p>
+		<br>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quasi maxime, consequatur
+			dolore eaque
+			dolorum asperiores perspiciatis minus earum molestiae possimus corrupti magni laboriosam reiciendis
+			porro odio quaerat molestias maiores!</p>
 		<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquid tenetur minus
 			veniam
 			exercitationem fuga perferendis! Aspernatur nulla similique, temporibus consectetur aliquam incidunt
@@ -102,9 +178,28 @@
 			dolorum asperiores perspiciatis minus earum molestiae possimus corrupti magni laboriosam reiciendis
 			porro odio quaerat molestias maiores!</p>
 
+	</div>
+	<script>
+		$(document).ready(function () {
+			$('.header__burger').click(function (event) {
+				$('.header__menu-mobail').toggleClass('header__menu-mobail_active');
+			});
+		});
+		$(document).ready(function () {
+			$('.header__burger').click(function (event) {
+				$('.header__burger').toggleClass('burger_active');
+				$('.header__menu-mobail_active').toggleClass('lock');
+			});
+		});
+	</script>
 
-
-
+	<script>
+		$('p').click(function () {
+			alert('Hello')
+		});
+	</script>
 </body>
+
+
 
 </html>
