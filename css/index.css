@@ -31,6 +31,11 @@
     
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
 .header-navigation__wrap {
     display: flex;
     justify-content: center;
@@ -48,7 +53,6 @@
     z-index: 4;
     
 }
-
 .logo-text{
     font-size: 34px;
     line-height: 1.2;
@@ -69,8 +73,6 @@
     background-image: url(../img/bg_photo_11949.jpg);
     background-color: #47453F;
     position: relative;
-
-
 
 }
 
@@ -281,7 +283,67 @@ margin-right: 25px;
 
 /* media блок header  */
 
-@media (max-width:1024px) {
+
+
+.section-offer {
+    height: 370px;
+    display: flex;
+    align-items: center;
+}
+
+.offer__block {
+    max-width: 266px;
+    text-align: center;
+    box-sizing: border-box;
+  
+}
+
+.offer__block-icon {
+    height: 50px;
+}
+
+.offer__block:hover .offer__block-icon {
+    fill:#c7b299;
+}
+
+.offer__block:hover .offer__block-title {
+    color:#c7b299;
+}
+
+.offer__block:hover .offer__block-title {
+    color:#c7b299;
+}
+
+.offer__block:hover span {
+   background:#c7b299;
+  
+
+}
+
+.offer__block h3 {
+    font-family: 'Raleway-Bold';
+    font-size: 22px; 
+}
+
+.offer__block p {
+    font-family: 'Montserrat-Light';
+    font-size: 14px;
+}
+
+.offer__block span {
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #f1eee9;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.offer__block-wrap {
+    display: flex;
+}
+
+@media screen and (max-width:1199px) {
 
     .Modern {
         font-size: 26px;
@@ -289,9 +351,18 @@ margin-right: 25px;
     .psd {
         font-size: 40px;
     }
+    .section-offer {
+        flex-direction: column;
+    }
+    .offer__block-wrap {
+    margin: 20px 0 0 0;
+    }
+    .offer__block {
+        margin: 15px 15px 0 15px;
+    }
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
 
     .header.lock {
         overflow: hidden;
@@ -421,10 +492,20 @@ margin-right: 25px;
     .header__pagination {
         display: none;
     }
-
-
-    
+    .section-offer {
+        padding: 100px 0 0 0;
+    }
+  
 }
+
+@media screen and (max-width: 480px) {
+    .offer__block-wrap {
+    flex-direction: column;
+    }
+}
+
+
+
 
 
 
