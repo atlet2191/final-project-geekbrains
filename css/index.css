@@ -286,7 +286,7 @@ margin-right: 25px;
 
 
 .section-offer {
-    height: 370px;
+    min-height: 370px;
     display: flex;
     align-items: center;
 }
