@@ -31,6 +31,19 @@
     
 }
 
+.section-title {
+    font-family: 'Raleway-Bold';
+    font-size: 22px;
+    color: #47453F;
+}
+
+.section-text {
+    color:#919191;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Montserrat-Light';
+}
+
 .container {
     max-width: 1100px;
     margin: 0px auto;
@@ -218,7 +231,7 @@ margin-right: 25px;
 }
 
 .header-button:focus {
-    background: rgb(253, 1, 1);
+    background: rgb(46, 233, 8);
     
 }
 
@@ -281,9 +294,6 @@ margin-right: 25px;
     display: none;  
 }
 
-/* media блок header  */
-
-
 
 .section-offer {
     min-height: 370px;
@@ -300,6 +310,7 @@ margin-right: 25px;
 
 .offer__block-icon {
     height: 50px;
+    fill: #585858;
 }
 
 .offer__block:hover .offer__block-icon {
@@ -310,9 +321,6 @@ margin-right: 25px;
     color:#c7b299;
 }
 
-.offer__block:hover .offer__block-title {
-    color:#c7b299;
-}
 
 .offer__block:hover span {
    background:#c7b299;
@@ -323,11 +331,7 @@ margin-right: 25px;
 .offer__block h3 {
     font-family: 'Raleway-Bold';
     font-size: 22px; 
-}
-
-.offer__block p {
-    font-family: 'Montserrat-Light';
-    font-size: 14px;
+    color: #47453F;
 }
 
 .offer__block span {
@@ -341,6 +345,109 @@ margin-right: 25px;
 
 .offer__block-wrap {
     display: flex;
+}
+
+/*секция с фото */
+
+.realization {
+    background-color: #fbfaf8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 0 0;
+    position: relative;
+    
+}
+
+.realization__text-wrap {
+    max-width: 757px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.realization__img {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.realization__img-browser-left {
+    position: absolute;
+    display: block;
+    left: 40px;
+}
+
+.realization__img-browser-left:hover {
+    z-index: 2;
+}
+
+.realization__img-browser-center {
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+
+.realization__img-browser-right {
+    position: absolute;
+    display: block;
+    right: 40px;
+}
+
+.realization__img-browser-right:hover {
+    z-index: 2;
+}
+
+/*рекламный блок*/
+.purchase-now {
+    background: url(../img/background-advertising.jpg);
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+.purchase-now__title {
+    font-family: "Raleway-Regular";
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+    
+}
+
+.purchase-now__title span {
+    color: #c7b299;
+}
+
+.purchase-now p {
+    line-height: 0px;
+}
+
+.purchase-now__bottom {
+    font-family: "Raleway-Bold";
+    font-size: 14px;
+    display: block;
+    width: 150px;
+    background-color: #998675;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 0 15px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.purchase-now__bottom:hover,
+.purchase-now__bottom:active{
+    border: solid 1px rgb(252, 252, 252);
+    background: rgb(46, 233, 8);
+}
+
+.purchase-now__bottom:focus {
+    background-color: #998675;
+    
 }
 
 @media screen and (max-width:1199px) {
@@ -359,6 +466,9 @@ margin-right: 25px;
     }
     .offer__block {
         margin: 15px 15px 0 15px;
+    }
+    .realization {
+        display: none;
     }
 }
 
@@ -495,12 +605,38 @@ margin-right: 25px;
     .section-offer {
         padding: 100px 0 0 0;
     }
+    .purchase-now__bottom {
+        display: none;
+    }
+    .purchase-now__title {
+        text-align: center;
+    }
+    .purchase-now p {
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+    .purchase-now {
+        margin: 20px 0 0 0;
+    }
+
   
 }
 
 @media screen and (max-width: 480px) {
     .offer__block-wrap {
     flex-direction: column;
+    }
+    .purchase-now__section-text-none {
+        display: none;
+    }
+    .purchase-now {
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        margin: 20px 0 0 0;
+    }
+    .purchase-now__title {
+        font-size: 20px;
     }
 
     
