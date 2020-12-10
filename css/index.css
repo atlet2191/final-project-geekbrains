@@ -320,6 +320,11 @@ margin-right: 25px;
 .offer__block:hover .offer__block-title {
     color:#c7b299;
 }
+.offer__block-title,
+.offer__block-icon:hover {
+    fill:#c7b299;
+    color:#c7b299;
+}
 
 
 .offer__block:hover span {
