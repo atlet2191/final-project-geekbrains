@@ -642,8 +642,63 @@ margin-right: 25px;
 
 }
 
+.mobile-devices {
+    height: 695px;
+    background-image: url(../img/Background-iphon.png);
+    background-color: #fbfaf8;
+    background-position: 40%;
+    width: 100%;
+}
+
+.mobile-devices__text-wrap {
+    max-width: 657px;
+    margin: 15% 14px 0 50%;
+}
+
+.mobile-devices_item {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+
+}
+
+.mobile-devices__list {
+    margin: 30px 0 0 0;
+}
+
+.mobile-devices_item:before {
+        content: '';
+        background-color:#c7b299;
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        z-index: 1;
+        left: -40px;
+       
+
+    }
+.mobile-devices__item-befor {
+    position: relative;
+}
+
+.mobile-devices__item-befor::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #fbfaf8;
+        border-right: 2px solid #fbfaf8;
+        z-index: 2;
+        transform: rotate(45deg);
+        top: 5px;
+        left: -36px;
+}
 
 
+.mobile-devices__item-befor:hover:before {
+        border-top: 2px solid #fd0202;
+        border-right: 2px solid #ff0000;
+}
 
 
 @media screen and (max-width:1199px) {
@@ -681,6 +736,19 @@ margin-right: 25px;
     }
     .our-projects__btn-load {
         display: none;
+    }
+    .mobile-devices {
+        height: 800px;
+        background-position: 34%;
+        background-position-y: 150px;
+        background-repeat: no-repeat;
+    }
+    .mobile-devices__text-wrap {
+        margin: 5% 14px 0 20%;
+        max-width: 100%;
+    }
+    .mobile-devices__list_wrap {
+        margin: 0 0 0 35%;
     }
 
 }
@@ -832,15 +900,34 @@ margin-right: 25px;
         margin: 20px 0 0 0;
     }
     .our-projects__pagination {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 50px 0;
-    flex-wrap: wrap;
-    justify-content: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 50px 0;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .our-projects__bottom {
-    margin: 10px 15px 0 0;
+        margin: 10px 15px 0 0;
+    }
+    .section-video {
+        display: none;
+    }
+    .mobile-devices {
+        background-position: 25%;
+        background-position-y: 171px;
+        background-size: 1500px;
+        height: 695px;
+    }
+    .mobile-devices__list_wrap {
+        display: none;
+    }
+    .mobile-devices__text-wrap {
+        margin: 0px 20px 0 20px;
+    }
+    .mobile-devices__title {
+        text-align: center;
+    }   
 
 
   
@@ -862,6 +949,22 @@ margin-right: 25px;
     .purchase-now__title {
         font-size: 20px;
     }
+    .mobile-devices {
+        background-position: 27%;
+        background-position-y: 40px;
+        background-size: 1500px;
+        height: 550px;
+    }
+    .mobile-devices__desc {
+        display: none;
+    }
+    .mobile-devices__text-wrap {
+        margin: 0 auto;
+    }
+    .mobile-devices__title {
+        text-align: center;
+    }   
+
 
     
 }
