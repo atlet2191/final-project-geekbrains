@@ -700,7 +700,58 @@ margin-right: 25px;
         border-right: 2px solid #ff0000;
 }
 
+.result {
+    height: 300px;
+    width: 100%;
+    background: #211b19;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.result__block {
+    width: 132px;
+    height: 171px;
+    margin: 0 70px 0 0;
+
+}
+
+.result__block:last-child {
+    margin: 0;
+}
+
+.result__block img {
+    display: block;
+    margin: auto;
+}
+
+.result__number {
+    font-family: 'Montserrat-Light';
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    margin: 30px 0 0 0;
+
+}
+
+.result__text {
+    color: #c7b299;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.result__block span {
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+}
+/********************************************************************************/
 @media screen and (max-width:1199px) {
 
     .Modern {
@@ -750,11 +801,22 @@ margin-right: 25px;
     .mobile-devices__list_wrap {
         margin: 0 0 0 35%;
     }
+    .result__block:last-child {
+        display: none;
+    }
+    .result__block:nth-child(4) {
+        margin: 0;
+    }
 
 }
 
 @media screen and (max-width:768px) {
-
+    .logo {
+        margin-top: 6px;
+    }
+    .header {
+        height: 75px;
+    }
     .header.lock {
         overflow: hidden;
     }
@@ -762,7 +824,6 @@ margin-right: 25px;
         position: fixed;
         top: 0;
         z-index: 50;
-        height: 100px;
     }
     .logo {
        position: relative;
@@ -868,10 +929,6 @@ margin-right: 25px;
         margin-top: 20px;
     }
 
-    .logo {
-        margin-top: 20px;
-    }
-
     .text-wrap {
         margin-top: 150px; 
     }
@@ -927,13 +984,27 @@ margin-right: 25px;
     }
     .mobile-devices__title {
         text-align: center;
-    }   
+    }
+    .result__block:nth-child(4) {
+        display: none;
+    }
+    .result__block:nth-child(3) {
+        margin: 0;
+    }
+    .result__block {
+        margin: 0 5% 0 0;
+    }
+}   
 
 
-  
-}
 
 @media screen and (max-width: 480px) {
+    .logo {
+        margin-top: 6px;
+    }
+    .header {
+    height: 75px;
+    }
     .offer__block-wrap {
     flex-direction: column;
     }
@@ -963,7 +1034,18 @@ margin-right: 25px;
     }
     .mobile-devices__title {
         text-align: center;
-    }   
+    }  
+    .result__block:nth-child(4) {
+        display: block; 
+    }
+    .result {
+        min-height: 500px;
+        flex-wrap: wrap;
+    }
+    .result__block:nth-child(2) {
+        margin: 0;
+    }
+}
 
 
     
