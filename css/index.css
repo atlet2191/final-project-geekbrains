@@ -530,6 +530,8 @@ margin-right: 25px;
     top: -38px;
 }
 
+
+
 .our-projects__discription h4 {
     font-family: "Raleway";
     font-size: 20px;
@@ -594,7 +596,20 @@ margin-right: 25px;
 }
 
 .our-projects__product-wrap:hover .our-projects__discription {
-  filter: brightness(60%);
+  background-color: #362f2d;
+}
+
+.our-projects__product-wrap:hover .our-projects__discription:after {
+    border-bottom: 13px solid #362f2d;
+
+}
+
+.our-projects__product-wrap:hover h4 {
+    color: #ffffff;
+}
+
+.our-projects__product-wrap:hover p {
+    color: #c7b299;
 }
 
 .our-projects__btn-load {
@@ -751,6 +766,244 @@ margin-right: 25px;
     height: 2px;
     background-color: #ffffff;
 }
+
+.recent {
+    min-height: 750px;
+    padding: 50px 0 0 0;
+    min-height: 750px;
+}
+
+.recent__posts {
+    max-width: 370px;
+    height: 395px;
+    position: relative;
+    border: 1px solid #eae5e3;
+    margin: 0 30px 0 0;
+}
+
+.recent__posts-numder {
+    width: 50px;
+    height: 35px;
+    z-index: 3;
+
+    border-radius: 3px 3px 0 0;
+    background-color: #363636;
+    color: #ffffff;
+    font-family: 'Raleway-Regular';
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.recent__posts-data {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+   
+}
+
+.recent__posts:hover .recent__posts-numder {
+    background-color: #c7b299;
+}
+
+.recent__posts:hover .recent__posts-month {
+    background-color: #a48d72;
+}
+
+.recent__posts-month {
+    height: 21px;
+    background-color: #252525;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px 0 0 0;
+    border-radius: 0 0 3px 3px;
+}
+
+.recent__posts:last-child {
+    margin: 0 0px 0 0;
+}
+
+.recent__posts-wrap {
+    display: flex;
+    margin: 0 0 35px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recent__text_center {
+    margin: auto;
+}
+
+.recent__posts:hover {
+    background-color: #362f2d;
+}
+
+.recent-posts__photo-post {
+    display: block;
+}
+
+.recent__posts-pagination {
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent__posts-pagination_item {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    opacity: 50%;
+}
+
+.recent__posts-pagination_item:hover {
+     border: 2px solid #d3c1ad;
+     background: transparent;
+     transform: scale(1.2);
+}
+
+.recent__posts-discription {
+    padding: 27px 37px 0 27px;
+}
+
+.recent__posts:hover .recent__posts-discription {
+    background-color: #362f2d;
+}
+
+.recent__posts-discription h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555;
+    font-family: 'Raleway-Regular';
+}
+
+.recent__posts:hover h4 {
+    color: #c7b299;
+}
+
+.recent__posts-discription h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+    font-family: 'Raleway-Regular';
+    line-height: 25px;
+    margin: 10px 0 0 0;
+}
+
+.recent__posts:hover h5 {
+    color: #ffffff;
+}
+
+.recent__posts-discription-read-more {
+    color: #c7b299;
+    font-family: 'Raleway-Regular';
+    font-size: 14px;
+    position: relative;
+    line-height: 57px;
+}
+
+.recent__posts-discription-read-more::after {
+    content: '';
+    position: absolute;
+    border: 5px solid #921a1a00;
+    border-bottom: 8px solid #c7b299;
+    transform: rotate(90deg);
+    right: -20px;
+    top: 2px;
+       
+}
+
+.recent__posts:hover .recent-posts__photo-post {
+  filter: brightness(50%);
+
+}
+
+.recent__pagination {
+    width: 65px;
+    height: 22px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.circle_right {
+    width: 22px;
+    height: 22px;
+    border: 2px solid  #d1d1d1;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.circl_left {
+    width: 22px;
+    height: 22px;
+    border: 2px solid  #d1d1d1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circl_left:hover {
+    border: 2px solid #c7b299;
+}
+
+.circl_left:hover:before {
+    border-top: 2px solid  #c7b299;
+    border-right: 2px solid  #c7b299;
+}
+
+.circle_right:hover {
+    border: 2px solid #c7b299;
+}
+
+.circle_right:hover::after {
+    border-top: 2px solid  #c7b299;
+    border-right: 2px solid  #c7b299;
+}
+
+.circl_left::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #d1d1d1;
+    border-right: 2px solid #d1d1d1;
+    z-index: 2;
+    transform: rotate(-138deg);
+    top: 6px;
+    left: 7px;
+}
+
+.circle_right::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid#d1d1d1;
+    border-right: 2px solid#d1d1d1;
+    z-index: 2;
+    transform: rotate(45deg);
+    top: 6px;
+    left: 4px;
+}
+
+
+
+
 /********************************************************************************/
 @media screen and (max-width:1199px) {
 
@@ -778,6 +1031,9 @@ margin-right: 25px;
     .our-projects__product-wrap:nth-child(2){
         margin-right: 0px;
     }
+    .recent__posts:last-child {
+       margin: 30px 0px 0 0;
+}
 
 }
 
@@ -806,6 +1062,24 @@ margin-right: 25px;
     }
     .result__block:nth-child(4) {
         margin: 0;
+    }
+    .recent__posts {
+        margin: 30px 0 0 0;
+    }
+    .recent__posts-wrap {
+    flex-direction: column;
+    align-items: center;
+    }
+    .recent__posts:nth-child(2){
+        margin-right: 0px;
+    }
+    .recent__posts:first-child {
+        margin-right: 0px;
+    }
+    .recent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
 
 }
@@ -1045,11 +1319,34 @@ margin-right: 25px;
     .result__block:nth-child(2) {
         margin: 0;
     }
+    .result__block:nth-child(3) {
+        margin: 0 5% 0 0;
+    }
+    .recent__posts:first-child {
+        margin: 30px 5px 0 5px;
+        margin-right: 5px;
+    }
+    .recent__posts:nth-child(2) {
+        margin: 30px 5px 0 5px;
+    }
+    .recent__posts:last-child {
+    margin: 30px 5px 0 5px;
+    }
+    .recent-posts__photo-post {
+        width: 100%;
+    }
+    .recent__posts-pagination {
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    top: -10px;
+
+    
 }
 
 
     
-}
+
 
 
 
