@@ -1002,7 +1002,39 @@ margin-right: 25px;
     left: 4px;
 }
 
+/*отличное решение как выровнить блоки по центру и незадовать фиксированые марджины*/
 
+.brands {
+    position: relative;
+    width: 100%;
+
+}
+
+.brands__backgraund {
+    background-image: url(../img/brands-section-photo.jpg);
+    filter: brightness(50%);
+    min-height: 489px;
+}
+
+.brands__logo {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.brand-logo-photo {
+    display: block;
+    margin: auto;
+}
+
+.brand-logo-photo-wrap {
+    display: flex;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
 
 
 /********************************************************************************/
@@ -1034,7 +1066,10 @@ margin-right: 25px;
     }
     .recent__posts:last-child {
        margin: 30px 0px 0 0;
-}
+    }
+    .brands {
+        margin: 80px 0 0 0;
+    }
 
 }
 
@@ -1078,9 +1113,12 @@ margin-right: 25px;
         margin-right: 0px;
     }
     .recent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .brands__logo {
+        flex-direction: column;
     }
 
 }
@@ -1341,6 +1379,10 @@ margin-right: 25px;
     height: 15px;
     position: absolute;
     top: -10px;
+    }
+    .brand-logo-photo_none-480px {
+        display: none;
+    }
 
     
 }
