@@ -973,6 +973,7 @@ margin-right: 25px;
 .circle_right:hover::after {
     border-top: 2px solid  #c7b299;
     border-right: 2px solid  #c7b299;
+    z-index: 2;
 }
 
 .circl_left::before {
@@ -982,7 +983,7 @@ margin-right: 25px;
     height: 8px;
     border-top: 2px solid #d1d1d1;
     border-right: 2px solid #d1d1d1;
-    z-index: 2;
+    z-index: 1;
     transform: rotate(-138deg);
     top: 6px;
     left: 7px;
